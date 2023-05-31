@@ -116,3 +116,75 @@ p:empty {
   background: red;
   height: 10px;
 }
+
+.input-dark {
+  background: rgb(159, 159, 159);
+}
+
+/* Селектор атрибуту */
+.input-dark[required] {
+  background: red;
+}
+
+/* Селектор значення атрибуту*/
+.input-dark[type='number'] {
+  background: rgb(31, 130, 7);
+}
+
+/* Селектор наявності значення атрибуту*/
+.input-dark[type=' number'] {
+  background: rgb(31, 130, 7);
+}
+
+/* Селектор наявності значення атрибуту*/
+.small-card[alt~='small'] {
+  height: 500px;
+}
+
+.card[class~='img'] {
+  height: 300px;
+}
+
+a[rel~='external'] {
+  color: green;
+}
+
+button[class|='btn'] {
+  background: rgb(193, 189, 193);
+}
+
+a[class^='btn'] {
+  background: rgb(97, 29, 97);
+}
+
+a[class*='btn'] {
+  background: rgb(97, 29, 97);
+}
+
+a[class$='big'] {
+  background: rgb(29, 58, 97);
+}
+
+/* Селектор псевдо елементів */
+.btn::first-letter {
+  color: red;
+}
+
+.big-text::first-line {
+  color: rgb(137, 95, 2);
+}
+
+.big-text::before {
+  content: '$$$';
+  color: green;
+}
+
+.big-text::after {
+  content: '$$$';
+  color: blueviolet;
+}
+
+.input-dark::placeholder {
+  color: green;
+  background: yellow;
+}
