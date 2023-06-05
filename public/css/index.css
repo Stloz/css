@@ -188,3 +188,102 @@ a[class$='big'] {
   color: green;
   background: yellow;
 }
+
+/* Селектори Урок 4 */
+
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: rgb(234, 7, 234);
+}
+
+.link:hover {
+  color: green;
+}
+
+.card:hover {
+  background: rgb(190, 249, 190);
+}
+
+.link:active {
+  color: purple;
+}
+
+.card:active {
+  background: purple;
+}
+
+input:focus {
+  background: red;
+}
+
+input {
+  color: gray;
+}
+
+.card:focus-within {
+  background: red;
+}
+
+.card:lang(en) > span::after {
+  background: goldenrod;
+  content: '(en)';
+}
+
+button {
+  background-color: lime;
+}
+
+button:enabled {
+  background-color: greenyellow;
+}
+
+button:disabled {
+  background-color: aqua;
+}
+
+.inp:read-write {
+  background-color: blue;
+}
+
+.inp:read-only {
+  background-color: red;
+}
+
+input[type='checkbox']:checked ~ span {
+  background: red;
+}
+
+.valid:valid {
+  background: yellow;
+}
+
+.valid:invalid {
+  background: gold;
+}
+
+.valid:optional {
+  background: green;
+}
+
+.number:focus {
+  background: white;
+}
+
+.number:out-of-range {
+  background-color: red;
+}
+
+.number:in-range {
+  background-color: green;
+}
+
+.number:invalid {
+  background: yellow;
+}
+
+input:placeholder-shown ~ span {
+  background: pink;
+}
