@@ -8,7 +8,7 @@
 }
 
 .card > p {
-  color: rgba(238, 7, 26, 0.771);
+  color: rgba(169, 7, 238, 0.771);
 }
 P {
   background: rgba(141, 253, 4, 0.256);
@@ -43,4 +43,22 @@ h2 {
 h2:hover {
   text-decoration-line: line-through;
   text-decoration-style: wavy;
+}
+
+/* Шрифти */
+
+* {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-display: swap;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: lighter;
+}
+
+span {
+  font-size: larger;
+  font-weight: 900;
+  font-style: oblique;
 }
