@@ -62,3 +62,16 @@ span {
   font-weight: 900;
   font-style: oblique;
 }
+
+.test {
+  display: none;
+}
+
+.block {
+  display: inline-block;
+  background-color: #0d5ba5;
+  margin: auto;
+
+  width: 100%;
+  min-width: 600px;
+}
