@@ -2,6 +2,7 @@
   background: #ffffff;
   padding: 0 15px;
 }
+
 .page_content {
   max-width: 960px;
   margin: 0 auto;
@@ -37,15 +38,15 @@
   color: rgb(0, 119, 255);
 }
 
-.nav_vertical > .nav_link:not(:last-child) {
+.nav_vertical>.nav_link:not(:last-child) {
   display: block;
 }
 
-.nav_inLine > .nav_link:not(:last-child) {
+.nav_inLine>.nav_link:not(:last-child) {
   margin-right: 24px;
 }
 
-.nav_vertical > .nav_link:not(:last-child) {
+.nav_vertical>.nav_link:not(:last-child) {
   margin-bottom: 12px;
 }
 
@@ -166,4 +167,32 @@
 
 h1 {
   text-shadow: 2px 2px 3px rgb(0, 200, 255);
+}
+
+.plans_card:nth-child(2)>.card {
+  background: gray;
+}
+
+.hero_text {
+  background: rgba(128, 128, 128, 0.263);
+  white-space: pre-line;
+  hyphens: auto;
+  word-spacing: 10px;
+  overflow: auto;
+  resize: both;
+  /* width: 200px;
+  height: 100px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis; */
+}
+
+.hero_title {
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  height: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
