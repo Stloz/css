@@ -1,289 +1,289 @@
 :root {
-  background: rgba(50, 145, 234, 0.452);
+	background: rgba(50, 145, 234, 0.452);
 }
 
 html {
-  max-width: 720px;
+	max-width: 720px;
 
-  background-color: aqua;
+	background-color: aqua;
 }
 
 body {
-  background: #f8f6f6;
+	background: #f8f6f6;
 }
 
 * {
-  color: red;
+	color: red;
 }
 
 h1 {
-  color: green;
+	color: green;
 }
 
 .box {
-  background: #a9a5a5;
+	background: #a9a5a5;
 }
 
 #user,
 .user {
-  color: blue;
+	color: blue;
 }
 
 h1,
 h2,
 button {
-  color: blueviolet;
+	color: blueviolet;
 }
 
 .button {
-  color: brown;
+	color: brown;
 }
 
-div > p {
-  color: coral;
+div>p {
+	color: coral;
 }
 
-#box > p {
-  color: cadetblue;
+#box>p {
+	color: cadetblue;
 }
 
-footer > .user {
-  color: darkorange;
+footer>.user {
+	color: darkorange;
 }
 
-footer > h1 {
-  color: gold;
+footer>h1 {
+	color: gold;
 }
 
-h1 ~ p,
-h1 ~ * > p {
-  background: black;
+h1~p,
+h1~*>p {
+	background: black;
 }
 
 .card-dark {
-  background: #ededed;
+	background: #ededed;
 }
 
 .item {
-  color: green;
+	color: green;
 }
 
 /* Селектор псевдокласса першої детини */
 .item:first-child {
-  color: blue;
+	color: blue;
 }
 
 /* Селектор псевдокласса останньої детини */
 .item:last-child {
-  color: rgb(255, 191, 0);
+	color: rgb(255, 191, 0);
 }
 
 /* Селектор першого типу */
 .item:first-of-type {
-  color: rgb(76, 253, 0);
+	color: rgb(76, 253, 0);
 }
 
 /* Селектор останнього типу */
 .item:last-of-type {
-  color: rgb(255, 0, 179);
+	color: rgb(255, 0, 179);
 }
 
 /* Селектор одиничного типу */
 .item:only-of-type {
-  color: rgb(0, 255, 234);
+	color: rgb(0, 255, 234);
 }
 
 /* Селектор порядкоової дитини */
 .item:only-of-type {
-  color: rgb(0, 255, 234);
+	color: rgb(0, 255, 234);
 }
 
 .item:nth-child(3n + 1) {
-  color: blueviolet;
+	color: blueviolet;
 }
 
 .item:nth-last-child(4n - 1) {
-  background: rgb(142, 140, 144);
+	background: rgb(142, 140, 144);
 }
 
 /* Селектор невідповідності */
 p:not(.item) {
-  color: rgb(255, 0, 0);
+	color: rgb(255, 0, 0);
 }
 
 /* Селектор пустого контенту */
 p:empty {
-  background: red;
-  height: 10px;
+	background: red;
+	height: 10px;
 }
 
 .input-dark {
-  background: rgb(159, 159, 159);
+	background: rgb(159, 159, 159);
 }
 
 /* Селектор атрибуту */
 .input-dark[required] {
-  background: red;
+	background: red;
 }
 
 /* Селектор значення атрибуту*/
 .input-dark[type='number'] {
-  background: rgb(31, 130, 7);
+	background: rgb(31, 130, 7);
 }
 
 /* Селектор наявності значення атрибуту*/
 .input-dark[type=' number'] {
-  background: rgb(31, 130, 7);
+	background: rgb(31, 130, 7);
 }
 
 /* Селектор наявності значення атрибуту*/
 .small-card[alt~='small'] {
-  height: 500px;
+	height: 500px;
 }
 
 .card[class~='img'] {
-  height: 300px;
+	height: 300px;
 }
 
 a[rel~='external'] {
-  color: green;
+	color: green;
 }
 
 button[class|='btn'] {
-  background: rgb(193, 189, 193);
+	background: rgb(193, 189, 193);
 }
 
 a[class^='btn'] {
-  background: rgb(97, 29, 97);
+	background: rgb(97, 29, 97);
 }
 
 a[class*='btn'] {
-  background: rgb(97, 29, 97);
+	background: rgb(97, 29, 97);
 }
 
 a[class$='big'] {
-  background: rgb(29, 58, 97);
+	background: rgb(29, 58, 97);
 }
 
 /* Селектор псевдо елементів */
 .btn::first-letter {
-  color: red;
+	color: red;
 }
 
 .big-text::first-line {
-  color: rgb(137, 95, 2);
+	color: rgb(137, 95, 2);
 }
 
 .big-text::before {
-  content: '$$$';
-  color: green;
+	content: '$$$';
+	color: green;
 }
 
 .big-text::after {
-  content: '$$$';
-  color: blueviolet;
+	content: '$$$';
+	color: blueviolet;
 }
 
 .input-dark::placeholder {
-  color: green;
-  background: yellow;
+	color: green;
+	background: yellow;
 }
 
 /* Селектори Урок 4 */
 
 #test:target {
-  color: red;
+	color: red;
 }
 
 .link:link {
-  color: rgb(234, 7, 234);
+	color: rgb(234, 7, 234);
 }
 
 .link:hover {
-  color: green;
+	color: green;
 }
 
 .card:hover {
-  background: rgb(190, 249, 190);
+	background: rgb(190, 249, 190);
 }
 
 .link:active {
-  color: purple;
+	color: purple;
 }
 
 .card:active {
-  background: purple;
+	background: purple;
 }
 
 input:focus {
-  background: red;
+	background: red;
 }
 
 input {
-  color: gray;
+	color: gray;
 }
 
 .card:focus-within {
-  background: red;
+	background: red;
 }
 
-.card:lang(en) > span::after {
-  background: goldenrod;
-  content: '(en)';
+.card:lang(en)>span::after {
+	background: goldenrod;
+	content: '(en)';
 }
 
 button {
-  background-color: lime;
+	background-color: lime;
 }
 
 button:enabled {
-  background-color: greenyellow;
+	background-color: greenyellow;
 }
 
 button:disabled {
-  background-color: aqua;
+	background-color: aqua;
 }
 
 .inp:read-write {
-  background-color: blue;
+	background-color: blue;
 }
 
 .inp:read-only {
-  background-color: red;
+	background-color: red;
 }
 
-input[type='checkbox']:checked ~ span {
-  background: red;
+input[type='checkbox']:checked~span {
+	background: red;
 }
 
 .valid:valid {
-  background: yellow;
+	background: yellow;
 }
 
 .valid:invalid {
-  background: gold;
+	background: gold;
 }
 
 .valid:optional {
-  background: green;
+	background: green;
 }
 
 .number:focus {
-  background: white;
+	background: white;
 }
 
 .number:out-of-range {
-  background-color: red;
+	background-color: red;
 }
 
 .number:in-range {
-  background-color: green;
+	background-color: green;
 }
 
 .number:invalid {
-  background: yellow;
+	background: yellow;
 }
 
-input:placeholder-shown ~ span {
-  background: pink;
+input:placeholder-shown~span {
+	background: pink;
 }
