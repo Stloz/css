@@ -3,6 +3,10 @@
   color: #0d5ba5;
 }
 
+.btn {
+  margin-bottom: 20px;
+}
+
 .card > p {
   color: rgb(162, 10, 245);
 }
@@ -75,4 +79,3 @@ span {
   width: 100%;
   min-width: 600px;
 }
-
