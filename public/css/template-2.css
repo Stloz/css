@@ -305,16 +305,17 @@
 
   flex-direction: row;
 
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   justify-content: flex-start;
   align-content: flex-start;
 
-  height: 800px;
+  /* height: 800px; */
+  gap: 24px;
 }
 
 .flex_item {
-  width: 250px;
-  background: gray;
-  margin: 15px;
+  /* width: 250px; */
+  /* background: gray; */
+  /* margin: 15px; */
 }
