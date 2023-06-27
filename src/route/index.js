@@ -548,7 +548,8 @@ router.get('/template-4', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-4', {
+	res.render('template-4', {
+	  layout: 'template-4',
     page: {
       title: 'Example Page',
     },
