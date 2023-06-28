@@ -441,6 +441,8 @@ router.get('/template-3', function (req, res) {
         'First featurette heading. It’ll blow your mind.',
       text: 'Some great placeholder content for the first featurette here. Imagine some exciting prose here.',
       photo: 'https://picsum.photos/500/500',
+      left: '<',
+      right: '>',
     },
 
     blog: [
@@ -548,8 +550,8 @@ router.get('/template-4', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-	res.render('template-4', {
-	  layout: 'template-4',
+  res.render('template-4', {
+    layout: 'template-4',
     page: {
       title: 'Example Page',
     },
