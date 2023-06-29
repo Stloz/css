@@ -1,3 +1,30 @@
+@keyframes fly {
+  from {
+    top: 0;
+    left: 0;
+    background: aqua;
+  }
+
+  25% {
+    top: 500px;
+    left: 500px;
+    background: magenta;
+    width: 500px;
+  }
+
+  50% {
+    left: 0;
+    background: lawngreen;
+    width: 300px;
+  }
+
+  to {
+    top: 0;
+    left: 0;
+    background: gray;
+  }
+}
+
 :root {
   --space-m: 12px;
   --space-xm: 16px;
@@ -97,7 +124,10 @@
   color: var(--color-text);
   font-size: var(--size-d);
   text-decoration: none;
+
   line-height: 100%;
+
+  transition-property: color 1s;
 }
 
 .nav_link:hover {
@@ -206,6 +236,8 @@
   text-decoration: none;
   background-color: var(--color-primary);
   border-radius: var(--border-radius);
+
+  transition: opacity 1s, background-color 1s;
 }
 
 .card_button {
@@ -215,6 +247,7 @@
 
 .button:hover {
   opacity: 0.7;
+  background-color: green;
 }
 
 .form {
@@ -290,9 +323,9 @@
 }
 
 .modal {
-  position: sticky;
-  top: 24px;
-  right: 24px;
+  position: fixed;
+  top: 200px;
+  right: 200px;
 
   /* height: 100px; */
   width: 600px;
@@ -305,6 +338,31 @@
 
   line-height: 160%;
   z-index: 2;
+
+  /* transition-property: top;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(
+    0.175,
+    0.885,
+    0.32,
+    1.275
+  );
+  transition-delay: 0.5s; */
+}
+
+.modal {
+  animation-name: fly;
+  animation-duration: 3s;
+
+  animation-timing-function: cubic-bezier(0.9, 0, 0.9, 0.9);
+  animation-delay: 1s;
+  /* animation-iteration-count: infinite; */
+  animation-direction: reverse;
+  animation-fill-mode: both;
+}
+
+body:hover .modal {
+  animation-play-state: paused;
 }
 
 .model_image {

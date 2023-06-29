@@ -27,6 +27,9 @@
 
   display: flex;
   justify-content: center;
+  background-image: url(/img/SVneon.jpg);
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
 }
 
 .page_content {
