@@ -1,4 +1,5 @@
 :root {
+  --space-s: 8px;
   --space-m: 12px;
   --space-xm: 16px;
   --space-l: 24px;
@@ -15,7 +16,8 @@
   --color-title: #212529;
   --color-text: #343a40;
 
-  --border-radius: 12px;
+  --border-radius-d: 12px;
+  --border-radius-s: 4px;
 
   --weidht-title: 600;
   --weight-text: 400;
@@ -71,7 +73,7 @@
   width: 25px;
   height: 25px;
 
-  border-radius: calc(var(--border-radius) / 2);
+  border-radius: calc(var(--border-radius-d) / 2);
 
   display: flex;
   justify-content: center;
@@ -138,7 +140,7 @@
 .main {
   display: flex;
   width: 100%;
-
+  align-items: flex-start;
   gap: 40px;
 }
 
@@ -148,7 +150,7 @@
   width: 100%;
 
   background-color: var(--color-white);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-d);
 
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
 
@@ -226,7 +228,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid #e4eaf2;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-d);
   padding: var(--space-l);
   gap: 8px;
 
@@ -251,7 +253,7 @@
   width: 100%;
 
   background-color: var(--color-white);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-d);
 
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 
@@ -260,4 +262,81 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-l);
+}
+
+.form_title {
+  text-align: center;
+  font-size: var(--size-b);
+  font-weight: var(--weight-text);
+  color: var(--color-title);
+}
+
+.form_info {
+  text-align: center;
+  font-size: var(--size-d);
+  font-weight: var(--weight-text);
+  color: #6c757d;
+}
+
+.form_button {
+  text-align: center;
+  padding: 12px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: calc(var(--border-radius-d) / 3);
+
+  transition: opacity 0.7s;
+}
+
+.form_button:hover {
+  opacity: 0.7;
+}
+
+.form_button:active {
+  opacity: 0.3;
+}
+
+.form_input_list {
+  display: flex;
+  gap: var(--space-m);
+  flex-direction: column;
+}
+
+.form_input {
+  padding: var(--space-xm);
+  border: 1px solid #ced4da;
+  border-radius: var(--border-radius-s);
+}
+
+.form_input::placeholder {
+  color: var(--color-title);
+  font-size: var(--size-d);
+}
+
+.form_checkbox_block {
+  display: flex;
+  gap: var(--space-s);
+  align-items: center;
+}
+
+.form_checkbox > input {
+  display: none;
+}
+
+.form_checkbox > input ~ div {
+  border: 1px solid #ced4da;
+  border-radius: var(--border-radius-s);
+  height: 13px;
+  width: 13px;
+}
+
+.form_checkbox > input:checked ~ div {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+.form_checkbox > label {
+  color: var(--color-title);
+  font-size: var(--size-d);
+  cursor: pointer;
 }
