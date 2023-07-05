@@ -59,14 +59,17 @@
 
 <div class="expirience">
 	{{#with expirience}}
-	<h1 class="expirience_title">{{title}}</h1>
-	<div class="badge_h">{{badge}}</div>
-	{{#each list}}
-	<div class="expirience_card">
-		<strong class="expirience_name">{{name}}</strong>
-		<p class="expirience_details">{{details}}</p>
+	<h2 class="expirience_title">{{title}}</h2>
+	<div class="badge_expirience">{{badge}}</div>
+
+	<div class="list_expirience">
+		{{#each list}}
+		<div>
+			<strong>{{name}}</strong>
+			<p>{{details}}</p>
+		</div>
+		{{/each}}
 	</div>
-	{{/each}}
 	{{/with}}
 </div>
 
