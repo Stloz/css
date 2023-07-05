@@ -313,7 +313,7 @@
   font-size: var(--size-d);
 }
 
-.form_checkbox_block {
+.form_checkbox {
   display: flex;
   gap: var(--space-s);
   align-items: center;
