@@ -1,4 +1,6 @@
 <div>
+	{{> headerDark}}
+	{{!-- {{#with header}}
 	<div class="header">
 		<div class="logo">
 			<span class="logo_badge">{{brandName}}</span>
@@ -13,7 +15,7 @@
 			</div>
 		</nav>
 	</div>
-	<hr class="hr">
+
 	<div class="header_bottom">
 		<div class="header_bottom_block">
 			<div class="badge_ad">Ad</div>
@@ -21,6 +23,7 @@
 		</div>
 		<div class="users">Users online: {{userOnline}}</div>
 	</div>
+	{{/with}} --}}
 </div>
 
 
@@ -39,8 +42,8 @@
 	{{/with}}
 </div>
 
-
-<div class="articles">
+{{> articleCardDark}}
+{{!-- <div class="articles">
 	<div class="articles_header">
 		<h1 class="article_title">Our Articles</h1>
 		<button class="article_button">View All</button>
@@ -55,9 +58,10 @@
 		</div>
 		{{/each}}
 	</div>
-</div>
+</div> --}}
 
-<footer class="footer">
+{{> footerDark}}
+{{!-- <footer class="footer">
 	<div>
 		{{#each footer.pages}}
 		<a href="{{path}}" class="footer_link">{{name}}</a>
@@ -66,4 +70,4 @@
 	<div>
 		<span class="footer_copyright">{{footer.copyright}}</span>
 	</div>
-</footer>
+</footer> --}}

@@ -1,0 +1,16 @@
+<div class="articles">
+	<div class="articles_header">
+		<h1 class="article_title">Our Articles</h1>
+		<button class="article_button">View All</button>
+	</div>
+	<div class="article_body">
+		{{#each articles}}
+		<div class="article2">
+			<img src="{{photo}}" {{#if isNew}}{{/if}}alt="photo" class="article_photo">
+			<h6 class="article_title2">{{name}}</h6>
+			<p class="article_text2">{{description}}</p>
+			<button class="article_button2">Read All</button>
+		</div>
+		{{/each}}
+	</div>
+</div>
