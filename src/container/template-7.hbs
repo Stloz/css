@@ -1,0 +1,73 @@
+<div>
+	{{> headerDark}}
+	{{!-- {{#with header}}
+	<div class="header">
+		<div class="logo">
+			<span class="logo_badge">{{brandName}}</span>
+		</div>
+		<nav class="header_nav">
+			<div class="header_nav2">
+				<div class="nav">
+					{{#each links}}
+					<a href="{{url}}" class="nav_link">{{text}}</a>
+					{{/each}}
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="header_bottom">
+		<div class="header_bottom_block">
+			<div class="badge_ad">Ad</div>
+			<div class="header_bottom_text">{{ad.text}}: <a href="{{url}}" class="url">{{ad.url}}</a></div>
+		</div>
+		<div class="users">Users online: {{userOnline}}</div>
+	</div>
+	{{/with}} --}}
+</div>
+
+
+<div class="hero">
+	{{#with hero}}
+	<h1 class="hero_title">{{title}}</h1>
+	<p class="hero_description">{{description}}</p>
+	<a href="{{button.url}}" class="hero_button">{{button.text}}</a>
+	{{/with}}
+</div>
+
+<div class="about">
+	{{#with about}}
+	<h1 class="about_title">{{heading}}</h1>
+	<p class="about_info">{{info}}</p>
+	{{/with}}
+</div>
+
+{{> articleCardDark}}
+{{!-- <div class="articles">
+	<div class="articles_header">
+		<h1 class="article_title">Our Articles</h1>
+		<button class="article_button">View All</button>
+	</div>
+	<div class="article_body">
+		{{#each articles}}
+		<div class="article2">
+			<img src="{{photo}}" {{#if isNew}}{{/if}}alt="photo" class="article_photo">
+			<h6 class="article_title2">{{name}}</h6>
+			<p class="article_text2">{{description}}</p>
+			<button class="article_button2">Read All</button>
+		</div>
+		{{/each}}
+	</div>
+</div> --}}
+
+{{> footerDark}}
+{{!-- <footer class="footer">
+	<div>
+		{{#each footer.pages}}
+		<a href="{{path}}" class="footer_link">{{name}}</a>
+		{{/each}}
+	</div>
+	<div>
+		<span class="footer_copyright">{{footer.copyright}}</span>
+	</div>
+</footer> --}}
