@@ -26,21 +26,93 @@
 
 	<div class="page page--dashboard">
 
-		<aside class="page__aside aside">
+		<aside class="page__aside aside vertical vertical--big">
 			<div class="aside__logo">
 				Sidebar
 			</div>
-			<nav class="aside__nav">
-				<a href="#" class="nav-button nav-button__active hover">
+			<nav class="vertical vertical--small">
+				<a href="#" class="nav-button nav-button__active click">
 					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/home.svg');"></span>
-					<span class="text text--line text--light">Home</span>
+					<span class="text text--light">Home</span>
+				</a>
+				<a href="#" class="nav-button click">
+					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/orders.svg');"></span>
+					<span class="text text--light">Orders</span>
+				</a>
+				<a href="#" class="nav-button click">
+					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/products.svg');"></span>
+					<span class="text text--light">Products</span>
 				</a>
 			</nav>
 		</aside>
 
-		<header class="header">trotrotr</header>
+		<header class="header">
+			<div class="layout header__content text--small">
+				<div class="header__search relative">
+					<input type="text" placeholder="Search" class="field field--header">
+					<span class="header__icon-search" style="background-image: url('/svg/header/search.svg')"></span>
+					<span class="icon icon--header-settings icon--button icon--color-blue click"
+						style="background-image: url('/svg/header/settings.svg')"></span>
+				</div>
 
-		<main class="main">trootr</main>
+				<div class="header-icon__list relative">
+					<span class="icon2 icon--header-signal icon--button icon--color-yellow click"
+						style="background-image: url('/svg/header/signal.svg')"></span>
+					<span class="icon icon--header-symbols icon--button icon--color-blue-light click"
+						style="background-image: url('/svg/header/symbols.svg')"></span>
+					<span class="icon icon--header-ring icon--button icon--color-yellow click"
+						style="background-image: url('/svg/header/ring.svg')"></span>
+				</div>
+			</div>
+
+		</header>
+
+		<main class="main">
+			<div class="layout">
+				<section class="box analytic__block">
+
+					<div class="analytic analytic--double analytic--purpule">
+						<span class=" icon analytic__button icon--button icon--color-purpule click"
+							style="background-image: url('/svg/analytic/cash.svg')"></span>
+						<div class="relative vertical vertical--small">
+							<div class="analytic__title text text--light">$961</div>
+							<div class="text text--small text--light text--lighter">Total orders</div>
+							<span class=" icon analytic__arrow"
+								style="background-image: url('/svg/analytic/bluearrow.svg')"></span>
+						</div>
+					</div>
+
+					<div class="analytic analytic--double analytic--blue">
+						<span class=" icon analytic__button icon--button icon--color-blue click"
+							style="background-image: url('/svg/analytic/bag.svg')"></span>
+						<div class="relative vertical vertical--small">
+							<div class="analytic__title text text--light">$500</div>
+							<div class="text text--small text--light text--lighter">Total earning</div>
+							<span class=" icon analytic__arrow"
+								style="background-image: url('/svg/analytic/bluearrow.svg')"></span>
+						</div>
+					</div>
+
+					<div class="analytic2 analytic--blue">
+						<span class=" icon analytic__button icon--button icon--color-blue click"
+							style="background-image: url('/svg/analytic/cash.svg')"></span>
+						<div class="relative vertical vertical--small">
+							<div class="analytic__title2 text text--light">$203</div>
+							<div class="text text--small text--light text--lighter">Total Income</div>
+						</div>
+
+					</div>
+					<div class="analytic2 analytic--white">
+						<span class=" icon analytic__button icon--button icon--color-yellow click"
+							style="background-image: url('/svg/analytic/shop.svg')"></span>
+						<div class="relative vertical vertical--small">
+							<div class="analytic__title2 text text--gray">$203</div>
+							<div class="text text--small text--light text--gray">Total Income</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
 
 	</div>
 
