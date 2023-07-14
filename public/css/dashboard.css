@@ -293,6 +293,12 @@ body {
     /* top: 0; */
     left: calc(100% + var(--spacing-1));
   }
+
+  .purchase__block {
+    display: grid;
+    grid-template-columns: repeat(1fr 450px);
+    grid-template-rows: 1fr;
+  }
 }
 
 @layer mod {
